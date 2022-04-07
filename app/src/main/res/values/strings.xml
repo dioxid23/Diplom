@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Diplom</string>
+    <string name="title_animals">Животные</string>
+    <string name="text_scan">Сканировать животное</string>
+    <string name="card_insects">Насекомые</string>
+    <string name="chordata">Хордовые</string>
+    <string name="card_mouse_title">Мышь</string>
+    <string name="card_mouse_description">Грызуны</string>
+    <string name="title_cat">Котенька</string>
+    <string name="description_cat">Домашние заенькие</string>
+    <string name="arrow_back">Назад</string>
+    <string name="mammals_title">Млекопитающие</string>
+</resources>
