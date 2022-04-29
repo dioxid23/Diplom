@@ -3,6 +3,7 @@ package com.example.diplom
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import com.example.diplom.databinding.ActivityInfoAnimalBinding
 import com.example.diplom.databinding.ActivityListCardBinding
 
@@ -27,9 +28,8 @@ class InfoAnimalActivity : AppCompatActivity() {
         }
     }
 
-    override fun onBackPressed() {
-        val intent = Intent(this, ListCardActivity::class.java)
-        startActivity(intent)
-        finish()
+    fun onBackPressed(view: View) {
+        super.onBackPressed()
     }
+
 }

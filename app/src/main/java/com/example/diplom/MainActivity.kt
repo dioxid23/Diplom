@@ -1,7 +1,9 @@
 package com.example.diplom
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.diplom.databinding.ActivityMainBinding
 
@@ -59,5 +61,10 @@ class MainActivity : AppCompatActivity() {
             recyclerView.adapter = adapter
         }
         adapter.addTypeAnimal(typesAnimals)
+    }
+
+    fun onClickStartScan(view: View) {
+        val intent = Intent(this, CameraActivity::class.java)
+        startActivity(intent)
     }
 }

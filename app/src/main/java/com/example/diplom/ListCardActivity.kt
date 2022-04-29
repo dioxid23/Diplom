@@ -1,8 +1,10 @@
 package com.example.diplom
 
 import android.content.ClipData
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.diplom.databinding.ActivityListCardBinding
 
@@ -80,5 +82,11 @@ class ListCardActivity : AppCompatActivity() {
             recyclerView.adapter = adapter
         }
         adapter.addItemCardAnimal(cardsAnimals)
+    }
+
+    fun onClickStartScan(view: View) {
+        val intent = Intent(this, CameraActivity::class.java)
+        intent.putExtra("animals_list", cardsAnimals)
+        startActivity(intent)
     }
 }
